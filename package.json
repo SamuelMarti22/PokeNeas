@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/SamuelMarti22/PokeNeas#readme",
   "dependencies": {
+    "ejs": "^3.1.10",
     "express": "^5.2.1"
   }
 }

@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #FFCB05 0%, #FF0000 50%, #FFCB05 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    animation: bounce 2s infinite;
+}
+
+header h1 {
+    color: #ffffff;
+    font-size: 2.5em;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border: 5px solid #FF0000;
+}
+
+.pokenea-content {
+    padding: 30px;
+}
+
+.pokenea-image-wrapper {
+    text-align: center;
+    margin-bottom: 25px;
+    background: linear-gradient(135deg, #FFCB05 0%, #FFE953 100%);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.pokenea-image {
+    max-width: 250px;
+    height: auto;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+}
+
+.pokenea-name {
+    color: #FF0000;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.pokenea-quote {
+    background: linear-gradient(135deg, #FFCB05 0%, #FFE953 100%);
+    border-left: 5px solid #FF0000;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    font-size: 1.1em;
+    font-style: italic;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pokenea-quote p {
+    margin: 0;
+}
+
+.pokenea-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.pokenea-details p {
+    background: #f0f0f0;
+    padding: 12px;
+    border-radius: 8px;
+    border-left: 4px solid #FFCB05;
+    color: #333;
+}
+
+.pokenea-details strong {
+    color: #FF0000;
+    display: block;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+.pokenea-details span {
+    color: #333;
+    font-weight: bold;
+    font-size: 1.05em;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #ffffff;
+    font-size: 1.1em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+    
+    .pokenea-name {
+        font-size: 1.5em;
+    }
+    
+    .pokenea-details {
+        grid-template-columns: 1fr;
+    }
+    
+    .pokenea-image {
+        max-width: 180px;
+    }
+}
