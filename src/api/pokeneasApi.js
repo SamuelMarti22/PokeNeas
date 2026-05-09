@@ -1,24 +1,20 @@
 import { json } from "express";
+import pokenea from "../data/pokenea.json";
 
-/**
- * Obtiene un Pokena aleatorio
- * @ts-check
- * @param {Object} req - Request de Express
- * @param {Object} res - Response de Express
- * @returns {json} - Un objeto JSON con los datos del Pokena aleatorio
- */
+export class PokeneasApi {
 
-export function getRandomPokena(req,res) {
-  const number = Math.floor(Math.random() * 7);
+    getRandomPokenea(req, res) {
+        const number = Math.floor(Math.random() * 7);
 
-  pokeneaData = {
-    id: number,
-    name: pokena[name],
-    height: pokena[height],
-    skill: pokena[skill], 
-    imageUrl: pokena[image],
-    phrase: phrases[number]
-  }
+        pokenea = {
+            id: pokenea[number].id,
+            name: pokenea[number].name,
+            height: pokenea[number].height,
+            skill: pokenea[number].skill,
+            imageUrl: pokenea[number].imageUrl,
+            phrase: pokenea[number].phrase
+        }
 
-    res.json(pokenaData);
+        res.json(pokenaData);
+    }
 }
