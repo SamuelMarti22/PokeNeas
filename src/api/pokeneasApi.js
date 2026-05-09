@@ -1,20 +1,18 @@
-import { json } from "express";
-import pokenea from "../data/pokenea.json";
+const { pokeneas } = require('../data/pokeneas.js');
 
-export class PokeneasApi {
+function getRandomPokena() {
+    const number = Math.floor(Math.random() * pokeneas.length);
 
-    getRandomPokenea(req, res) {
-        const number = Math.floor(Math.random() * 7);
+    const pokeneaData = {
+        id: pokeneas[number].id,
+        name: pokeneas[number].name,
+        height: pokeneas[number].height,
+        skill: pokeneas[number].skill,
+        imageUrl: pokeneas[number].imageUrl,
+        phrase: pokeneas[number].phrase
+    };
 
-        pokenea = {
-            id: pokenea[number].id,
-            name: pokenea[number].name,
-            height: pokenea[number].height,
-            skill: pokenea[number].skill,
-            imageUrl: pokenea[number].imageUrl,
-            phrase: pokenea[number].phrase
-        }
-
-        res.json(pokenaData);
-    }
+    return pokeneaData;
 }
+
+module.exports = { getRandomPokena };
