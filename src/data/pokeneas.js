@@ -4,7 +4,7 @@ const pokeneas = [
     "name": "Danigigas",
     "height": 3.7,
     "skill": "Comienzo analítico",
-    "imageUrl": "XXXX",
+    "imageUrl": "https://storage.googleapis.com/pokeneas_storage/danigigas.jpeg",
     "phrase": "¡Que cochinaaaaaada!"
   },
   {
@@ -12,7 +12,7 @@ const pokeneas = [
     "name": "Shakireon",
     "height": 1.0,
     "skill": "Movimiento de cadera",
-    "imageUrl": "XXXX",
+    "imageUrl": "https://storage.googleapis.com/pokeneas_storage/shakireon.jpeg",
     "phrase": "Una loba en el armario, AUUUUUUUUUU"
   },
   {
@@ -20,7 +20,7 @@ const pokeneas = [
     "name": "Ñeroxys",
     "height": 1.7,
     "skill": "Carterismo",
-    "imageUrl": "XXXXX",
+    "imageUrl": "https://storage.googleapis.com/pokeneas_storage/neroxys.jpeg",
     "phrase": "Ñerito tiene la hora?"
   },
   {
@@ -28,7 +28,7 @@ const pokeneas = [
     "name": "Snorflow",
     "height": 2.1,
     "skill": "Canto de bajo mundo",
-    "imageUrl": "XXXX",
+    "imageUrl": "https://storage.googleapis.com/pokeneas_storage/snorflow.jpeg",
     "phrase": "Llego el propio pa tirar las rimas"
   },
   {
@@ -36,7 +36,7 @@ const pokeneas = [
     "name": "Aggrolicia",
     "height": 2.1,
     "skill": "Bolillo parejo",
-    "imageUrl": "XXXXX",
+    "imageUrl": "https://storage.googleapis.com/pokeneas_storage/aggrolicia.jpeg",
     "phrase": "Le recibo 50.000 razones para dejarlo ir"
   },
   {
@@ -44,7 +44,7 @@ const pokeneas = [
     "name": "Rosario tijeras",
     "height": 0.9,
     "skill": "Motilar",
-    "imageUrl": "XXXXX",
+    "imageUrl": "https://storage.googleapis.com/pokeneas_storage/rosarioTijeras.jpeg",
     "phrase": "Me lo mecatié en cositas"
   },
   {
@@ -52,7 +52,7 @@ const pokeneas = [
     "name": "Sopletasaur",
     "height": 0.7,
     "skill": "Humo en la cara",
-    "imageUrl": "XXXXX",
+    "imageUrl": "https://storage.googleapis.com/pokeneas_storage/sopletasaur.jpeg",
     "phrase": "Yo lo puedo dejar cuando yo quiera"
   },
   {
@@ -60,7 +60,7 @@ const pokeneas = [
     "name": "Panratica",
     "height": 0.6,
     "skill": "Agalludo",
-    "imageUrl": "XXXXX",
+    "imageUrl": "https://storage.googleapis.com/pokeneas_storage/panratica.jpeg",
     "phrase": "Cuide el bolso mujer que se lo van a robar"
   },
   {
@@ -68,7 +68,7 @@ const pokeneas = [
     "name": "Karoletta",
     "height": 0.6,
     "skill": "Bichota",
-    "imageUrl": "XXXXX",
+    "imageUrl": "https://storage.googleapis.com/pokeneas_storage/karoletta.jpeg",
     "phrase": "This is so amazing, I am super happy woooow"
   }
 ]
