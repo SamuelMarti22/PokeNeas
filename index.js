@@ -1,11 +1,11 @@
 const express = require('express')
-const router = express.Router()
-const os = require("os")
+
 const app = express()
-const port = 80
+const port = 8080
 
 app.set('view engine', 'ejs');
 app.set('views', './views');
+app.use(express.static('public'));
 
 const PokeneasController = require('./src/controllers/PokeneasController');
 const PokeneasApi = require('./src/api/pokeneasApi');
