@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Pokenea más nea</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>El Pokenea más nea</h1>
+            <h4>Container Id: <%= pokenea.containerId %></h4>
+        </header>
+        
+        <main class="card">
+            <div class="pokenea-content">
+                <div class="pokenea-image-wrapper">
+                    <img src="<%= pokenea.imageUrl %>" alt="<%= pokenea.name %>" class="pokenea-image">
+                </div>
+                
+                <div class="pokenea-info">
+                    <h2 class="pokenea-name"><%= pokenea.name %></h2>
+                    
+                    <div class="pokenea-quote">
+                        <p>"<%= pokenea.phrase %>"</p>
+                    </div>
+                    
+                    <div class="pokenea-details">
+                        <p><strong>ID:</strong> <span>#<%= pokenea.id %></span></p>
+                        <p><strong>Altura:</strong> <span><%= pokenea.height %></span></p>
+                        <p><strong>Habilidad:</strong> <span><%= pokenea.skill %></span></p>
+                        <p><strong>Contenedor:</strong> <span><%= containerId %></span></p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Atrapa la magia de los Pokeneas</p>
+        </footer>
+    </div>
+</body>
+</html>
