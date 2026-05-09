@@ -7,8 +7,16 @@ const port = 80
 app.set('view engine', 'ejs');
 app.set('views', './views');
 
-router.get('/', "./src/controllers/PokeneasController.index");
-router.get('/api/pokeneas', "./src/api/pokeneasApi.getRandomPokenea");
+const PokeneasController = require('./src/controllers/PokeneasController');
+const PokeneasApi = require('./src/api/pokeneasApi');
+
+app.get('/', (req, res) => {
+  PokeneasController.index(req, res);
+});
+
+app.get('/api/pokeneas', (req, res) => {
+  PokeneasApi.getRandomPokenea(req, res);
+});
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
