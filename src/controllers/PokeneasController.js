@@ -1,5 +1,5 @@
-import os from 'os';
-import { getRandomPokena } from '../api/pokeneasApi.js';
+import os from 'node:os';
+import { getRandomPokenea } from '../api/pokeneasApi.js';
 
 export class PokeneasController {
 
