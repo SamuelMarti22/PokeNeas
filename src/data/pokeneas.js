@@ -1,4 +1,4 @@
-export const pokeneas = [
+const pokeneas = [
   {
     "id": 486,
     "name": "Danigigas",
@@ -72,3 +72,5 @@ export const pokeneas = [
     "phrase": "This is so amazing, I am super happy woooow"
   }
 ]
+
+module.exports = { pokeneas };

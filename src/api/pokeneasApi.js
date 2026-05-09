@@ -1,6 +1,6 @@
 const { pokeneas } = require('../data/pokeneas.js');
 
-function getRandomPokena() {
+function getRandomPokenea() {
     const number = Math.floor(Math.random() * pokeneas.length);
 
     const pokeneaData = {
@@ -15,4 +15,4 @@ function getRandomPokena() {
     return pokeneaData;
 }
 
-module.exports = { getRandomPokena };
+module.exports = { getRandomPokenea };

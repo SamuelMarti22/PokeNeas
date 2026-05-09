@@ -1,15 +1,14 @@
-import os from 'os';
-import { getRandomPokena } from '../api/pokeneasApi.js';
+const os = require('os');
+const { getRandomPokenea } = require('../api/pokeneasApi');
 
-export class PokeneasController {
+function index(req, res) {
+    const pokeneaData = getRandomPokenea();
+    const viewData = {
+        containerId: os.hostname(),
+        pokenea: pokeneaData
+    };
 
-    index(req, res) {
-        const pokeneaData = getRandomPokena();
-        const viewData = {
-            "containerId": os.hostname(),
-            "pokenea": pokeneaData
-        };
-
-        res.render('home', viewData);
-    }
+    res.render('home', viewData);
 }
+
+module.exports = { index };
