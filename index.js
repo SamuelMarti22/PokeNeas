@@ -1,7 +1,7 @@
 const express = require('express')
 
 const app = express()
-const port = 80
+const port = 8081
 
 app.set('view engine', 'ejs');
 app.set('views', './views');
@@ -14,8 +14,8 @@ app.get('/', (req, res) => {
   PokeneasController.index(req, res);
 });
 
-app.get('/api/pokeneas', (req, res) => {
-  PokeneasApi.getRandomPokenea(req, res);
+app.get('/api/pokenea', (req, res) => {
+  res.json(PokeneasApi.getRandomPokenea());
 });
 
 app.listen(port, () => {
