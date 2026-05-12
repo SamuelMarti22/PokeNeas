@@ -1,21 +1,21 @@
 const express = require('express')
 
 const app = express()
-const port = 8080
+const port = 80
 
 app.set('view engine', 'ejs');
 app.set('views', './views');
 app.use(express.static('public'));
 
 const PokeneasController = require('./src/controllers/PokeneasController');
-const PokeneasApiController = require('./src/api/pokeneasApiController');
+const PokeneasApiController = require('./src/api/PokeneasApiController');
 
 app.get('/', (req, res) => {
   PokeneasController.index(req, res);
 });
 
 app.get('/api/pokenea', (req, res) => {
-  res.json(PokeneasApiController.getRandomPokenea());
+  PokeneasApiController.getRandomPokenea(req, res);
 });
 
 app.listen(port, () => {

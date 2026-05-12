@@ -1,15 +1,17 @@
 const os = require('os');
-const { getRandomPokenea } = require('../api/pokeneasApiController');
+const PokeneasService = require('../services/PokeneasService');
 
+class PokeneasController {
 
-function index(req, res) {
-    const pokeneaData = getRandomPokenea();
-    const viewData = {
-        containerId: os.hostname(),
-        pokenea: pokeneaData
-    };
+    static index(req, res) {
+        const pokeneaData = PokeneasService.getRandomPokenea();
+        const viewData = {
+            containerId: os.hostname(),
+            pokenea: pokeneaData
+        };
 
-    res.render('home', viewData);
+        res.render('home', viewData);
+    }
 }
 
-module.exports = { index };
+module.exports = PokeneasController;
