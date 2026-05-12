@@ -1,5 +1,5 @@
 const os = require('os');
-const { getRandomPokenea } = require('../api/pokeneasApi');
+const { getRandomPokenea } = require('../api/pokeneasApiController');
 
 
 function index(req, res) {

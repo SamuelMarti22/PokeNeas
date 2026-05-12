@@ -1,6 +1,6 @@
 const { pokeneas } = require('../data/pokeneas.js');
 
-class PokeneasApi {
+class PokeneasApiController {
   static getRandomPokenea() {
     const number = Math.floor(Math.random() * pokeneas.length);
     return {
@@ -14,4 +14,4 @@ class PokeneasApi {
   }
 }
 
-module.exports = PokeneasApi;
+module.exports = PokeneasApiController;
